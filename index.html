@@ -20,20 +20,26 @@
                     <span></span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="register.html">Apply</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="active" data-lang-key="nav.home">Home</a></li>
+                    <li><a href="courses.html" data-lang-key="nav.courses">Courses</a></li>
+                    <li><a href="about.html" data-lang-key="nav.about">About Us</a></li>
+                    <li><a href="locations.html" data-lang-key="nav.locations">Locations</a></li>
+                    <li><a href="register.html" data-lang-key="nav.apply">Apply</a></li>
+                    <li><a href="blog.html" data-lang-key="nav.blog">Blog</a></li>
+                    <li><a href="faq.html" data-lang-key="nav.faq">FAQ</a></li>
+                    <li><a href="contact.html" data-lang-key="nav.contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="language-selector">
                 <button class="lang-btn" data-lang="en">EN</button>
                 <button class="lang-btn" data-lang="uz">UZ</button>
                 <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -93,19 +99,19 @@
         <div class="container">
             <h2>Start Your Tech Journey Today</h2>
             <div class="action-buttons">
-                <a href="courses.html" class="action-btn">
+                <a href="courses.html" class="action-btn" data-lang-key="quickActions.exploreCourses">
                     <i class="fas fa-laptop-code"></i>
                     <span>Explore Courses</span>
                 </a>
-                <a href="register.html" class="action-btn">
+                <a href="register.html" class="action-btn" data-lang-key="quickActions.registerNow">
                     <i class="fas fa-user-plus"></i>
                     <span>Register Now</span>
                 </a>
-                <a href="locations.html" class="action-btn">
+                <a href="locations.html" class="action-btn" data-lang-key="quickActions.findLocations">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>Find Locations</span>
                 </a>
-                <a href="contact.html" class="action-btn">
+                <a href="contact.html" class="action-btn" data-lang-key="quickActions.contactUs">
                     <i class="fas fa-envelope"></i>
                     <span>Contact Us</span>
                 </a>
@@ -333,6 +339,10 @@
         </div>
     </footer>
 
+    <script src="languages/en.js"></script>
+    <script src="languages/uz.js"></script>
+    <script src="languages/ru.js"></script>
+    <script src="languages/index.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

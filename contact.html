@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CoddyCamp IT Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CoddyCamp</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="register.html">Apply</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team</p>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="var(--background-color)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-cards" data-aos="fade-up">
+                <div class="info-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Amir Temur Street<br>Tashkent, Uzbekistan</p>
+                    <a href="locations.html" class="btn-link">View All Locations</a>
+                </div>
+                <div class="info-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+998 90 123 4567<br>Mon-Fri, 9:00 AM - 6:00 PM</p>
+                    <a href="tel:+998901234567" class="btn-link">Call Now</a>
+                </div>
+                <div class="info-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@coddycamp.com<br>support@coddycamp.com</p>
+                    <a href="mailto:info@coddycamp.com" class="btn-link">Send Email</a>
+                </div>
+                <div class="info-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team<br>Available 24/7</p>
+                    <a href="#" class="btn-link" id="open-chat">Start Chat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-container" data-aos="fade-up">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" checked>
+                                Subscribe to our newsletter
+                            </label>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-large">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="map-container" data-aos="fade-left">
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50264037015!2d69.13928276729939!3d41.28277044900771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers to common questions</p>
+            </div>
+            <div class="faq-preview-container" data-aos="fade-up">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How can I enroll my child in a course?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>You can enroll your child by filling out the application form on our website, visiting one of our branches in person, or calling our enrollment hotline. After submitting your application, our team will contact you to confirm enrollment and provide further details.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What age groups do you cater to?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Our courses are designed for students aged 7-17, with specific age ranges for each course. We have courses for ages 7-9, 10-14, and 15-17, each tailored to the appropriate skill level and learning pace.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Do you offer both online and offline classes?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we offer both online and offline classes for most of our courses. Some specialized courses may only be available in one format. You can check the format availability on each course's description page.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more-faq">
+                    <a href="faq.html" class="btn">View All FAQs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Connect With Us</h2>
+                <p>Follow us on social media for updates, tips, and student success stories</p>
+            </div>
+            <div class="social-grid" data-aos="fade-up">
+                <a href="#" class="social-card instagram">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@CoddyCampUZ</p>
+                </a>
+                <a href="#" class="social-card telegram">
+                    <div class="social-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>t.me/CoddyCamp</p>
+                </a>
+                <a href="#" class="social-card youtube">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>CoddyCamp Channel</p>
+                </a>
+                <a href="#" class="social-card facebook">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>CoddyCamp Official</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Start Your Tech Journey?</h2>
+                <p>Enroll in one of our courses today and take the first step towards a future in technology.</p>
+                <div class="cta-buttons">
+                    <a href="courses.html" class="btn btn-large">Explore Courses</a>
+                    <a href="register.html" class="btn btn-large btn-outline">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">
+            <h3>CoddyCamp Support</h3>
+            <button class="close-chat" id="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <div class="message received">
+                <div class="message-content">
+                    <p>👋 Hello! How can we help you today?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message..." id="chat-message-input">
+            <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CoddyCamp</h2>
+                    <p>Empowering the next generation of tech innovators</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                            <li><i class="fas fa-envelope"></i> info@coddycamp.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, City</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CoddyCamp IT Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // In a real implementation, you would send this data to a server
+                // For demo purposes, we'll just show an alert
+                alert(`Thank you, ${name}! Your message has been sent. We'll get back to you at ${email} soon.`);
+                
+                // Reset the form
+                contactForm.reset();
+            });
+        }
+
+        // Chat Widget Functionality
+        const chatWidget = document.getElementById('chat-widget');
+        const openChatBtn = document.getElementById('open-chat');
+        const closeChatBtn = document.getElementById('close-chat');
+        const chatInput = document.getElementById('chat-message-input');
+        const sendMessageBtn = document.getElementById('send-message');
+        const chatMessages = document.querySelector('.chat-messages');
+
+        // Open chat
+        if (openChatBtn) {
+            openChatBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                chatWidget.classList.add('active');
+            });
+        }
+
+        // Close chat
+        if (closeChatBtn) {
+            closeChatBtn.addEventListener('click', function() {
+                chatWidget.classList.remove('active');
+            });
+        }
+
+        // Send message
+        function sendMessage() {
+            const messageText = chatInput.value.trim();
+            if (messageText) {
+                // Add user message
+                const userMessage = document.createElement('div');
+                userMessage.className = 'message sent';
+                userMessage.innerHTML = `
+                    <div class="message-content">
+                        <p>${messageText}</p>
+                        <span class="message-time">Just now</span>
+                    </div>
+                `;
+                chatMessages.appendChild(userMessage);
+                
+                // Clear input
+                chatInput.value = '';
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+                
+                // Simulate response after a short delay
+                setTimeout(() => {
+                    const botMessage = document.createElement('div');
+                    botMessage.className = 'message received';
+                    botMessage.innerHTML = `
+                        <div class="message-content">
+                            <p>Thanks for your message! Our team will get back to you soon.</p>
+                            <span class="message-time">Just now</span>
+                        </div>
+                    `;
+                    chatMessages.appendChild(botMessage);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 1000);
+            }
+        }
+
+        if (sendMessageBtn) {
+            sendMessageBtn.addEventListener('click', sendMessage);
+        }
+
+        if (chatInput) {
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
