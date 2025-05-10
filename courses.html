@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CoddyCamp IT Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CoddyCamp</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="register.html">Apply</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Discover the perfect tech course for your age and interest</p>
+        </div>
+    </section>
+
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="age-filter">Age Group:</label>
+                    <select id="age-filter">
+                        <option value="all">All Ages</option>
+                        <option value="7-9">7-9 years</option>
+                        <option value="10-14">10-14 years</option>
+                        <option value="15-17">15-17 years</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="programming">Programming</option>
+                        <option value="design">Design</option>
+                        <option value="ai">AI</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="format-filter">Format:</label>
+                    <select id="format-filter">
+                        <option value="all">All Formats</option>
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </div>
+                <button id="apply-filters" class="btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-grid">
+        <div class="container">
+            <div class="course-cards">
+                <!-- Programming Courses -->
+                <div class="course-card" data-age="7-9" data-category="programming" data-format="hybrid">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Programming Basics">
+                        <div class="age-group">Ages 7-9</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Programming Basics</h3>
+                        <p>Introduction to coding concepts through fun, interactive games and activities.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online/Offline</span>
+                            <span><i class="fas fa-tag"></i> $199</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-age="10-14" data-category="programming" data-format="hybrid">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Web Development">
+                        <div class="age-group">Ages 10-14</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Web Development</h3>
+                        <p>Learn HTML, CSS, and JavaScript to create your own websites and web applications.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online/Offline</span>
+                            <span><i class="fas fa-tag"></i> $299</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-age="15-17" data-category="programming" data-format="hybrid">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Advanced Programming">
+                        <div class="age-group">Ages 15-17</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Advanced Programming</h3>
+                        <p>Dive deep into Python, Java, and data structures to build complex applications.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 16 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online/Offline</span>
+                            <span><i class="fas fa-tag"></i> $349</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Design Courses -->
+                <div class="course-card" data-age="10-14" data-category="design" data-format="online">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Digital Art & Design">
+                        <div class="age-group">Ages 10-14</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Art & Design</h3>
+                        <p>Learn digital drawing, graphic design principles, and create your own digital artwork.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online</span>
+                            <span><i class="fas fa-tag"></i> $249</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-age="15-17" data-category="design" data-format="offline">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="UI/UX Design">
+                        <div class="age-group">Ages 15-17</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>UI/UX Design</h3>
+                        <p>Master user interface and experience design principles to create intuitive digital products.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 14 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Offline</span>
+                            <span><i class="fas fa-tag"></i> $329</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- AI Courses -->
+                <div class="course-card" data-age="15-17" data-category="ai" data-format="hybrid">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="AI & Machine Learning">
+                        <div class="age-group">Ages 15-17</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Explore the fundamentals of artificial intelligence and build your own ML models.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 16 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online/Offline</span>
+                            <span><i class="fas fa-tag"></i> $399</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-age="10-14" data-category="ai" data-format="online">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Robotics for Kids">
+                        <div class="age-group">Ages 10-14</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Robotics for Kids</h3>
+                        <p>Learn to build and program robots using basic AI concepts and block-based coding.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online</span>
+                            <span><i class="fas fa-tag"></i> $279</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-age="7-9" data-category="programming" data-format="offline">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Scratch Programming">
+                        <div class="age-group">Ages 7-9</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Scratch Programming</h3>
+                        <p>Create interactive stories, games, and animations with the block-based Scratch language.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Offline</span>
+                            <span><i class="fas fa-tag"></i> $189</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What equipment do students need for online courses?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students will need a computer (Windows, Mac, or Linux) with a stable internet connection. Specific software requirements will be provided before the course starts, and most software used is free or has educational licenses.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How are students grouped in classes?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Students are grouped by age (7-9, 10-14, 15-17) and experience level. We ensure that each student is placed in a class where they can learn effectively and comfortably.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Can I switch from online to offline classes or vice versa?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, for hybrid courses, students can switch between online and offline attendance based on their needs. Please notify us at least 24 hours in advance if you plan to change your attendance mode.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What happens if my child misses a class?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>All classes are recorded and made available to enrolled students. Additionally, our instructors offer make-up sessions and extra help for students who miss classes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Tech Journey?</h2>
+                <p>Enroll in one of our courses today and take the first step towards a future in technology.</p>
+                <a href="register.html" class="btn btn-large">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CoddyCamp</h2>
+                    <p>Empowering the next generation of tech innovators</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                            <li><i class="fas fa-envelope"></i> info@coddycamp.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, City</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CoddyCamp IT Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

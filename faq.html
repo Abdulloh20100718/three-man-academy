@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - CoddyCamp IT Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CoddyCamp</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="register.html">Apply</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="faq-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about CoddyCamp</p>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="faq-search">
+        <div class="container">
+            <div class="search-container" data-aos="fade-up">
+                <h2>How can we help you?</h2>
+                <p>Search our FAQ for quick answers to your questions</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Type your question here..." id="faq-search">
+                    <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-categories">
+        <div class="container">
+            <div class="categories-container" data-aos="fade-up">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="general">
+                        <div class="tab-icon"><i class="fas fa-info-circle"></i></div>
+                        <span>General</span>
+                    </button>
+                    <button class="category-tab" data-category="courses">
+                        <div class="tab-icon"><i class="fas fa-laptop-code"></i></div>
+                        <span>Courses</span>
+                    </button>
+                    <button class="category-tab" data-category="enrollment">
+                        <div class="tab-icon"><i class="fas fa-user-plus"></i></div>
+                        <span>Enrollment</span>
+                    </button>
+                    <button class="category-tab" data-category="payment">
+                        <div class="tab-icon"><i class="fas fa-credit-card"></i></div>
+                        <span>Payment</span>
+                    </button>
+                    <button class="category-tab" data-category="technical">
+                        <div class="tab-icon"><i class="fas fa-cogs"></i></div>
+                        <span>Technical</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-container">
+                <!-- General FAQs -->
+                <div class="faq-category active" id="general" data-aos="fade-up">
+                    <h2>General Questions</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>What is CoddyCamp IT Academy?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>CoddyCamp IT Academy is an educational institution that provides technology courses for children and teenagers aged 7-17. We offer courses in programming, design, AI, robotics, and more, designed to develop technical skills, critical thinking, and creativity.</p>
+                                <p>Our curriculum is inspired by Harvard's CS50 course, adapted for different age groups to ensure an engaging and effective learning experience.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>What age groups do you cater to?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Our courses are designed for students aged 7-17, with specific age ranges for each course. We have courses for ages 7-9, 10-14, and 15-17, each tailored to the appropriate skill level and learning pace.</p>
+                                <p>We ensure that the content and teaching methods are age-appropriate and engaging for each group.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Do you offer both online and offline classes?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Yes, we offer both online and offline classes for most of our courses. Some specialized courses may only be available in one format. You can check the format availability on each course's description page.</p>
+                                <p>Our online classes use interactive platforms and tools to ensure an engaging learning experience, while our offline classes take place in our well-equipped facilities.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>How many students are in each class?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>We maintain small class sizes to ensure personalized attention. Typically, our classes have 8-12 students, allowing instructors to provide individual guidance and support.</p>
+                                <p>This approach helps us ensure that every student receives the attention they need and can progress at their own pace.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Who are your instructors?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Our instructors are experienced professionals with backgrounds in technology, education, or both. They include software developers, designers, AI specialists, and educators who are passionate about teaching technology to young people.</p>
+                                <p>All instructors undergo thorough training in our teaching methodology and are selected not only for their technical expertise but also for their ability to engage and inspire young learners.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses FAQs -->
+                <div class="faq-category" id="courses">
+                    <h2>Course-Related Questions</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>How long are the courses?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Course durations vary depending on the subject and level. Most of our regular courses run for 8-12 weeks, with classes held 1-2 times per week. We also offer intensive courses and workshops that may have different schedules.</p>
+                                <p>Each class session typically lasts 1.5-2 hours, with a mix of instruction, hands-on practice, and collaborative activities.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>What if my child misses a class?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>We understand that students may occasionally miss classes. We provide recorded lessons for online courses and make-up sessions for offline courses when possible. Students can also schedule one-on-one time with instructors to catch up on missed material.</p>
+                                <p>We recommend notifying us in advance if your child will miss a class so we can make appropriate arrangements.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Do you provide certificates upon course completion?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Yes, all students receive a certificate of completion at the end of each course. For certain advanced courses, students may also receive specialized certifications or digital badges that recognize specific skills.</p>
+                                <p>These certificates can be valuable additions to academic portfolios and can demonstrate a student's commitment to developing technical skills.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>How do you assess student progress?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>We use a combination of project-based assessments, quizzes, and instructor evaluations to track student progress. Parents receive regular progress reports, and we hold parent-teacher meetings to discuss student development.</p>
+                                <p>Our focus is on practical skills and understanding rather than memorization, so most assessments involve creating projects or solving real-world problems.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>What programming languages do you teach?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>We teach a variety of programming languages based on age group and course focus. For younger students (7-9), we use block-based languages like Scratch. For intermediate students (10-14), we introduce Python and JavaScript. Advanced students (15-17) may learn languages like Java, C++, or specialized languages based on their interests.</p>
+                                <p>Our curriculum is designed to build a strong foundation in programming concepts that can be applied across different languages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enrollment FAQs -->
+                <div class="faq-category" id="enrollment">
+                    <h2>Enrollment Questions</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>How do I enroll my child in a course?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>You can enroll your child by filling out the application form on our website, visiting one of our branches in person, or calling our enrollment hotline. After submitting your application, our team will contact you to confirm enrollment and provide further details.</p>
+                                <p>We recommend enrolling at least two weeks before the course start date to ensure availability.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Can my child try a class before enrolling?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Yes, we offer free trial classes for most of our courses. This allows students to experience our teaching methodology and determine if the course is right for them before committing to the full program.</p>
+                                <p>To schedule a trial class, please contact our enrollment team or visit your nearest branch.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>What materials or equipment does my child need?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>For offline classes, we provide all necessary equipment and materials. For online classes, students will need a computer with internet access. Specific software requirements will be communicated before the course begins, and we primarily use free or open-source software.</p>
+                                <p>We recommend having a notebook for taking notes and a USB drive for saving projects, although most work can be stored in the cloud.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Can my child join a course that has already started?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>It depends on the course and how far it has progressed. For some courses, we can arrange catch-up sessions to help new students join ongoing classes. Please contact us to discuss your specific situation.</p>
+                                <p>We generally recommend starting at the beginning of a course, especially for foundational subjects, but we try to be flexible when possible.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Is prior experience required for your courses?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Most of our introductory courses do not require any prior experience. We design our curriculum to be accessible to beginners while still being engaging for students with some background knowledge.</p>
+                                <p>For advanced courses, we may recommend or require completion of prerequisite courses or demonstration of equivalent knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment FAQs -->
+                <div class="faq-category" id="payment">
+                    <h2>Payment & Fees Questions</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>What are the payment options?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>We accept various payment methods including bank transfer, credit/debit cards, and cash payments at our branches. We also offer installment payment plans for some of our longer courses.</p>
+                                <p>Payment details and options will be provided upon enrollment confirmation.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Do you offer any discounts or scholarships?</h3>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Yes, we offer sibling discounts, referral discounts, and scholarships for talented students with financial constraints. We also occasionally run promotional discounts for new courses or seasonal programs.</p>

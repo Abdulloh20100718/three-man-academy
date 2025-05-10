@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoddyCamp IT Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CoddyCamp</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="register.html">Apply</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2>Welcome to CoddyCamp IT Academy</h2>
+                    <p>Empowering the next generation of tech innovators</p>
+                    <a href="register.html" class="btn">Enroll Now</a>
+                </div>
+                <div class="slide-image" style="background-image: url('/placeholder.svg?height=600&width=1200')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Learn Programming from Experts</h2>
+                    <p>CS50-inspired curriculum for ages 7-17</p>
+                    <a href="courses.html" class="btn">View Courses</a>
+                </div>
+                <div class="slide-image" style="background-image: url('/placeholder.svg?height=600&width=1200')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Hands-on Learning Experience</h2>
+                    <p>Build real projects and develop practical skills</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+                <div class="slide-image" style="background-image: url('/placeholder.svg?height=600&width=1200')"></div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>About CoddyCamp IT Academy</h2>
+                <p>CoddyCamp is a premier IT academy dedicated to teaching coding and technology skills to children and teenagers aged 7-17. Our curriculum is inspired by Harvard's CS50 course, adapted for different age groups to ensure an engaging and effective learning experience.</p>
+                <p>We offer both online and offline courses in programming, design, and artificial intelligence, taught by experienced instructors who are passionate about technology education.</p>
+            </div>
+            <div class="intro-image">
+                <img src="/placeholder.svg?height=400&width=600" alt="Students learning at CoddyCamp">
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-actions">
+        <div class="container">
+            <h2>Start Your Tech Journey Today</h2>
+            <div class="action-buttons">
+                <a href="courses.html" class="action-btn">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Explore Courses</span>
+                </a>
+                <a href="register.html" class="action-btn">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register Now</span>
+                </a>
+                <a href="locations.html" class="action-btn">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Find Locations</span>
+                </a>
+                <a href="contact.html" class="action-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-courses">
+        <div class="container">
+            <h2>Featured Courses</h2>
+            <div class="course-cards">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Programming Basics">
+                        <div class="age-group">Ages 7-9</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Programming Basics</h3>
+                        <p>Introduction to coding concepts through fun, interactive games and activities.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online/Offline</span>
+                            <span><i class="fas fa-tag"></i> $199</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Web Development">
+                        <div class="age-group">Ages 10-14</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Web Development</h3>
+                        <p>Learn HTML, CSS, and JavaScript to create your own websites and web applications.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online/Offline</span>
+                            <span><i class="fas fa-tag"></i> $299</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="AI & Machine Learning">
+                        <div class="age-group">Ages 15-17</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Explore the fundamentals of artificial intelligence and build your own ML models.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 16 weeks</span>
+                            <span><i class="fas fa-map-pin"></i> Online/Offline</span>
+                            <span><i class="fas fa-tag"></i> $399</span>
+                        </div>
+                        <a href="register.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="courses.html" class="btn btn-outline">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Student Activities</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Students coding">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Group project">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Presentation">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Robotics class">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"CoddyCamp helped me discover my passion for programming. The teachers are amazing and the projects are fun!"</p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Student">
+                            <div>
+                                <h4>Alex, 12</h4>
+                                <p>Web Development Course</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I never thought I could create my own AI model at 16, but CoddyCamp made it possible. The curriculum is challenging but very rewarding."</p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Student">
+                            <div>
+                                <h4>Maria, 16</h4>
+                                <p>AI & Machine Learning Course</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"My 8-year-old son loves his programming classes at CoddyCamp. The instructors make learning code fun and engaging for young kids."</p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Parent">
+                            <div>
+                                <h4>John, Parent</h4>
+                                <p>Programming Basics Course</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <i class="fas fa-user-graduate"></i>
+                <h3 class="counter" data-target="1500">0</h3>
+                <p>Students</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3 class="counter" data-target="25">0</h3>
+                <p>Expert Instructors</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3 class="counter" data-target="20">0</h3>
+                <p>Courses</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Locations</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to receive updates on new courses, events, and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CoddyCamp</h2>
+                    <p>Empowering the next generation of tech innovators</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                            <li><i class="fas fa-envelope"></i> info@coddycamp.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, City</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CoddyCamp IT Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

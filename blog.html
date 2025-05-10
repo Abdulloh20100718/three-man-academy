@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CoddyCamp IT Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CoddyCamp</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="register.html">Apply</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Blog & News</h1>
+                <p>Stay updated with the latest from CoddyCamp</p>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filters-container" data-aos="fade-up">
+                <div class="search-box">
+                    <input type="text" placeholder="Search articles..." id="blog-search">
+                    <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="news">News</button>
+                    <button class="category-btn" data-category="courses">Courses</button>
+                    <button class="category-btn" data-category="events">Events</button>
+                    <button class="category-btn" data-category="success-stories">Success Stories</button>
+                    <button class="category-btn" data-category="tech-trends">Tech Trends</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-container" data-aos="fade-up">
+                <div class="featured-image">
+                    <img src="/placeholder.svg?height=500&width=800" alt="Featured Post">
+                    <div class="featured-tag">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-category">News</span>
+                        <span class="post-date"><i class="far fa-calendar-alt"></i> May 15, 2023</span>
+                    </div>
+                    <h2>New Python Course for Kids Launching Next Month</h2>
+                    <p>We're excited to announce our new Python course designed specifically for children aged 10-14. This course will introduce kids to programming concepts through fun, interactive projects.</p>
+                    <div class="post-author">
+                        <img src="/placeholder.svg?height=50&width=50" alt="Alisher Usmanov">
+                        <div>
+                            <h4>Alisher Usmanov</h4>
+                            <p>Founder & CEO</p>
+                        </div>
+                    </div>
+                    <a href="blog-post.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-grid">
+        <div class="container">
+            <div class="blog-posts-grid" data-aos="fade-up">
+                <!-- Post 1 -->
+                <div class="blog-card" data-category="success-stories">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Coding Competition">
+                        <div class="card-category">Success Stories</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> April 28, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>CoddyCamp Students Win National Coding Competition</h3>
+                        <p>We're proud to announce that a team of CoddyCamp students has won first place in the National Youth Coding Competition. The team developed an innovative app that helps connect volunteers with local community projects.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Malika Karimova">
+                                <span>Malika Karimova</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="blog-card" data-category="tech-trends">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="AI Ethics">
+                        <div class="card-category">Tech Trends</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> April 10, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>The Importance of Teaching AI Ethics to Young Learners</h3>
+                        <p>As artificial intelligence becomes increasingly prevalent in our daily lives, it's crucial that we teach young learners not just how to use AI tools, but also the ethical considerations surrounding this powerful technology.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Timur Rakhimov">
+                                <span>Timur Rakhimov</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="blog-card" data-category="news">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="New Branch">
+                        <div class="card-category">News</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> March 22, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <h3>New Samarkand Branch Opening in June</h3>
+                        <p>We're thrilled to announce the opening of our new branch in Samarkand this June. This expansion will allow us to bring quality tech education to even more students across Uzbekistan.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Zarina Ismoilova">
+                                <span>Zarina Ismoilova</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="blog-card" data-category="events">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Summer Camp">
+                        <div class="card-category">Events</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> March 15, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3>Summer Coding Camp Registration Now Open</h3>
+                        <p>Registration for our annual Summer Coding Camp is now open! This year's camp will feature exciting new projects in game development, web design, and robotics.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Alisher Usmanov">
+                                <span>Alisher Usmanov</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="blog-card" data-category="tech-trends">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Future in Tech">
+                        <div class="card-category">Tech Trends</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> February 28, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>How to Prepare Your Child for a Future in Tech</h3>
+                        <p>In today's digital world, preparing children for careers in technology is more important than ever. Here are some tips for parents looking to nurture their child's interest in tech.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Malika Karimova">
+                                <span>Malika Karimova</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="blog-card" data-category="courses">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Web Development">
+                        <div class="card-category">Courses</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> February 15, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Why Web Development is a Great First Coding Skill</h3>
+                        <p>Web development offers immediate visual feedback and practical applications, making it an excellent entry point for young coders. Learn why we recommend starting with HTML, CSS, and JavaScript.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Timur Rakhimov">
+                                <span>Timur Rakhimov</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 7 -->
+                <div class="blog-card" data-category="success-stories">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Student App">
+                        <div class="card-category">Success Stories</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> January 30, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3>16-Year-Old Student Develops App to Help Peers Study</h3>
+                        <p>Meet Aziz, a CoddyCamp student who developed a mobile app that helps students organize study sessions and share notes. His app has already been downloaded by hundreds of students across Uzbekistan.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Zarina Ismoilova">
+                                <span>Zarina Ismoilova</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 8 -->
+                <div class="blog-card" data-category="events">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Hackathon">
+                        <div class="card-category">Events</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> January 15, 2023</span>
+                            <span class="post-read-time"><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <h3>Junior Hackathon: Building Solutions for Local Communities</h3>
+                        <p>Our upcoming Junior Hackathon will challenge students to develop tech solutions for local community issues. Join us for a weekend of coding, collaboration, and creativity.</p>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Alisher Usmanov">
+                                <span>Alisher Usmanov</span>
+                            </div>
+                            <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination" data-aos="fade-up">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-sidebar">
+        <div class="container">
+            <div class="sidebar-container" data-aos="fade-up">
+                <div class="sidebar-content">
+                    <div class="sidebar-widget popular-posts">
+                        <h3>Popular Posts</h3>
+                        <div class="popular-post-item">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Popular Post">
+                            <div>
+                                <h4><a href="blog-post.html">The Future of Coding Education</a></h4>
+                                <p><i class="far fa-calendar-alt"></i> January 5, 2023</p>
+                            </div>
+                        </div>
+                        <div class="popular-post-item">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Popular Post">
+                            <div>
+                                <h4><a href="blog-post.html">5 Reasons Kids Should Learn to Code</a></h4>
+                                <p><i class="far fa-calendar-alt"></i> December 12, 2022</p>
+                            </div>
+                        </div>
+                        <div class="popular-post-item">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Popular Post">
+                            <div>
+                                <h4><a href="blog-post.html">Robotics for Beginners: Getting Started</a></h4>
+                                <p><i class="far fa-calendar-alt"></i> November 28, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget categories">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">News <span>(12)</span></a></li>
+                            <li><a href="#">Courses <span>(8)</span></a></li>
+                            <li><a href="#">Events <span>(15)</span></a></li>
+                            <li><a href="#">Success Stories <span>(10)</span></a></li>
+                            <li><a href="#">Tech Trends <span>(14)</span></a></li>
+                            <li><a href="#">Tutorials <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget tags">
+                        <h3>Tags</h3>
+                        <div class="tag-cloud">
+                            <a href="#">Coding</a>
+                            <a href="#">Python</a>
+                            <a href="#">Web Development</a>
+                            <a href="#">AI</a>
+                            <a href="#">Robotics</a>
+                            <a href="#">Design</a>
+                            <a href="#">Education</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Kids</a>
+                            <a href="#">Teens</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget newsletter">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <p>Get the latest news and updates delivered to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Want to Contribute to Our Blog?</h2>
+                <p>Are you a student, parent, or educator with insights to share? We welcome guest posts about coding, technology education, and student success stories.</p>
+                <a href="contact.html" class="btn btn-large">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CoddyCamp</h2>
+                    <p>Empowering the next generation of tech innovators</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                            <li><i class="fas fa-envelope"></i> info@coddycamp.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, City</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CoddyCamp IT Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Blog category filtering
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const blogCards = document.querySelectorAll('.blog-card');
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.getAttribute('data-category');
+                
+                // Filter blog posts
+                blogCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Blog search functionality
+        const searchInput = document.getElementById('blog-search');
+        
+        searchInput.addEventListener('keyup', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            blogCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const content = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+        
+        // Pagination (simplified for demo)
+        const paginationBtns = document.querySelectorAll('.pagination-btn');
+        
+        paginationBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                paginationBtns.forEach(b => b.classList.remove('active'));
+                if (!this.classList.contains('next')) {
+                    this.classList.add('active');
+                }
+                
+                // In a real implementation, this would load different posts
+                window.scrollTo({
+                    top: document.querySelector('.blog-grid').offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

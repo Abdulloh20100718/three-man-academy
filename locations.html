@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - CoddyCamp IT Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="locations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CoddyCamp</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html" class="active">Locations</a></li>
+                    <li><a href="register.html">Apply</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="locations-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Our Locations</h1>
+                <p>Find a CoddyCamp academy near you</p>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="locations-map">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Find Us Across Uzbekistan</h2>
+                <p>We have 5 branches strategically located to serve students across the country.</p>
+            </div>
+            <div class="map-container" data-aos="zoom-in">
+                <div class="interactive-map">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Uzbekistan Map" class="map-image">
+                    <div class="map-pin" style="top: 40%; left: 45%;" data-location="tashkent-center">
+                        <div class="pin-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="pin-pulse"></div>
+                        <div class="pin-label">Tashkent Center</div>
+                    </div>
+                    <div class="map-pin" style="top: 45%; left: 50%;" data-location="tashkent-chilanzar">
+                        <div class="pin-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="pin-pulse"></div>
+                        <div class="pin-label">Tashkent Chilanzar</div>
+                    </div>
+                    <div class="map-pin" style="top: 60%; left: 30%;" data-location="samarkand">
+                        <div class="pin-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="pin-pulse"></div>
+                        <div class="pin-label">Samarkand</div>
+                    </div>
+                    <div class="map-pin" style="top: 55%; left: 20%;" data-location="bukhara">
+                        <div class="pin-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="pin-pulse"></div>
+                        <div class="pin-label">Bukhara</div>
+                    </div>
+                    <div class="map-pin" style="top: 25%; left: 65%;" data-location="namangan">
+                        <div class="pin-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="pin-pulse"></div>
+                        <div class="pin-label">Namangan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-tabs">
+        <div class="container">
+            <div class="tabs-container" data-aos="fade-up">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="tashkent-center">Tashkent Center</button>
+                    <button class="tab-btn" data-tab="tashkent-chilanzar">Tashkent Chilanzar</button>
+                    <button class="tab-btn" data-tab="samarkand">Samarkand</button>
+                    <button class="tab-btn" data-tab="bukhara">Bukhara</button>
+                    <button class="tab-btn" data-tab="namangan">Namangan</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="tashkent-center">
+                        <div class="location-details">
+                            <div class="location-image">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Tashkent Center">
+                            </div>
+                            <div class="location-info">
+                                <h3>Tashkent Center</h3>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>123 Amir Temur Street, Tashkent</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <p>+998 90 123 4567</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Our flagship location in the heart of Tashkent. Features state-of-the-art computer labs, robotics workshop, and design studio.</p>
+                                </div>
+                                <div class="location-actions">
+                                    <a href="https://maps.google.com" target="_blank" class="btn">Get Directions</a>
+                                    <a href="contact.html" class="btn btn-outline">Contact This Branch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50264037015!2d69.13928276729939!3d41.28277044900771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="location-gallery">
+                            <h3>Facility Gallery</h3>
+                            <div class="gallery-grid">
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Computer Lab">
+                                    <div class="gallery-caption">Computer Lab</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Robotics Workshop">
+                                    <div class="gallery-caption">Robotics Workshop</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Design Studio">
+                                    <div class="gallery-caption">Design Studio</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Classroom">
+                                    <div class="gallery-caption">Classroom</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tashkent-chilanzar">
+                        <div class="location-details">
+                            <div class="location-image">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Tashkent Chilanzar">
+                            </div>
+                            <div class="location-info">
+                                <h3>Tashkent Chilanzar</h3>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>45 Chilanzar Street, Tashkent</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <p>+998 90 123 4568</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Monday - Friday: 10:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Our newest branch in the Chilanzar district, featuring modern facilities and specialized AI learning labs.</p>
+                                </div>
+                                <div class="location-actions">
+                                    <a href="https://maps.google.com" target="_blank" class="btn">Get Directions</a>
+                                    <a href="contact.html" class="btn btn-outline">Contact This Branch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50264037015!2d69.13928276729939!3d41.28277044900771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="location-gallery">
+                            <h3>Facility Gallery</h3>
+                            <div class="gallery-grid">
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="AI Lab">
+                                    <div class="gallery-caption">AI Lab</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Coding Space">
+                                    <div class="gallery-caption">Coding Space</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Collaboration Area">
+                                    <div class="gallery-caption">Collaboration Area</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Reception">
+                                    <div class="gallery-caption">Reception</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="samarkand">
+                        <div class="location-details">
+                            <div class="location-image">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Samarkand">
+                            </div>
+                            <div class="location-info">
+                                <h3>Samarkand</h3>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>78 Registan Square, Samarkand</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <p>+998 90 123 4569</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 3:00 PM<br>Sunday: Closed</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Our Samarkand branch combines historical surroundings with cutting-edge technology education.</p>
+                                </div>
+                                <div class="location-actions">
+                                    <a href="https://maps.google.com" target="_blank" class="btn">Get Directions</a>
+                                    <a href="contact.html" class="btn btn-outline">Contact This Branch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97090.13288305482!2d66.88956755820312!3d39.65700700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d191960077df7%3A0x487636d5f8f74565!2sSamarkand%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="location-gallery">
+                            <h3>Facility Gallery</h3>
+                            <div class="gallery-grid">
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Main Hall">
+                                    <div class="gallery-caption">Main Hall</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Computer Lab">
+                                    <div class="gallery-caption">Computer Lab</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Outdoor Area">
+                                    <div class="gallery-caption">Outdoor Area</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Classroom">
+                                    <div class="gallery-caption">Classroom</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="bukhara">
+                        <div class="location-details">
+                            <div class="location-image">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Bukhara">
+                            </div>
+                            <div class="location-info">
+                                <h3>Bukhara</h3>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>12 Lyabi Hauz, Bukhara</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <p>+998 90 123 4570</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 3:00 PM<br>Sunday: Closed</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Our Bukhara location offers a blend of traditional architecture with modern tech facilities.</p>
+                                </div>
+                                <div class="location-actions">
+                                    <a href="https://maps.google.com" target="_blank" class="btn">Get Directions</a>
+                                    <a href="contact.html" class="btn btn-outline">Contact This Branch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97090.13288305482!2d64.42956755820312!3d39.76700700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060e65993cd5%3A0xc87beaf40e4e8466!2sBukhara%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="location-gallery">
+                            <h3>Facility Gallery</h3>
+                            <div class="gallery-grid">
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Historic Building">
+                                    <div class="gallery-caption">Historic Building</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Tech Lab">
+                                    <div class="gallery-caption">Tech Lab</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Courtyard">
+                                    <div class="gallery-caption">Courtyard</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Learning Space">
+                                    <div class="gallery-caption">Learning Space</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="namangan">
+                        <div class="location-details">
+                            <div class="location-image">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Namangan">
+                            </div>
+                            <div class="location-info">
+                                <h3>Namangan</h3>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>34 Central Street, Namangan</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <p>+998 90 123 4571</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 3:00 PM<br>Sunday: Closed</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Our newest branch in Namangan features specialized programming and robotics facilities.</p>
+                                </div>
+                                <div class="location-actions">
+                                    <a href="https://maps.google.com" target="_blank" class="btn">Get Directions</a>
+                                    <a href="contact.html" class="btn btn-outline">Contact This Branch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97090.13288305482!2d71.67956755820312!3d41.00700700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb4c1b2e60f2b1%3A0x9f0235229f0da3a8!2sNamangan%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="location-gallery">
+                            <h3>Facility Gallery</h3>
+                            <div class="gallery-grid">
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Robotics Lab">
+                                    <div class="gallery-caption">Robotics Lab</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Programming Studio">
+                                    <div class="gallery-caption">Programming Studio</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Meeting Room">
+                                    <div class="gallery-caption">Meeting Room</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Student Lounge">
+                                    <div class="gallery-caption">Student Lounge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="virtual-tour">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Virtual Tour</h2>
+                <p>Can't visit in person? Take a virtual tour of our flagship Tashkent Center location.</p>
+            </div>
+            <div class="tour-container" data-aos="zoom-in">
+                <div class="tour-video">
+                    <div class="video-placeholder">
+                        <img src="/placeholder.svg?height=500&width=900" alt="Virtual Tour">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-features">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Modern Computer Labs</h3>
+                            <p>Equipped with the latest hardware and software for optimal learning.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Robotics Workshop</h3>
+                            <p>Hands-on space for building and programming robots.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Design Studio</h3>
+                            <p>Creative space for digital art and design projects.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Collaboration Spaces</h3>
+                            <p>Areas designed for teamwork and group projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our locations and facilities.</p>
+            </div>
+            <div class="faq-container" data-aos="fade-up">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Are all courses available at every location?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Most of our core courses are available at all locations. However, some specialized courses like Advanced AI or specific robotics programs may only be available at select branches. Please check the course details or contact your nearest branch for specific course availability.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Can I transfer between locations mid-course?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we offer flexibility for students to transfer between locations if needed. Please provide at least one week's notice to both the original and new location to ensure a smooth transition. All your progress and records will be transferred.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Do you provide parking facilities?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>All our locations have either dedicated parking or arrangements with nearby parking facilities. Tashkent Center and Chilanzar branches have their own parking lots, while other locations have partnerships with nearby parking services.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Are the facilities accessible for people with disabilities?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, all our locations are equipped with ramps, elevators, and accessible restrooms. We are committed to providing an inclusive learning environment for all students. If you have specific accessibility requirements, please contact us in advance so we can ensure the best possible experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Visit Us Today!</h2>
+                <p>Come see our facilities in person and learn more about our courses. No appointment necessary during regular hours.</p>
+                <div class="cta-buttons">
+                    <a href="courses.html" class="btn btn-large">Explore Courses</a>
+                    <a href="register.html" class="btn btn-large btn-outline">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CoddyCamp</h2>
+                    <p>Empowering the next generation of tech innovators</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                            <li><i class="fas fa-envelope"></i> info@coddycamp.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, City</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CoddyCamp IT Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Location map pins interaction
+        const mapPins = document.querySelectorAll('.map-pin');
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        
+        mapPins.forEach(pin => {
+            pin.addEventListener('click', function() {
+                const location = this.getAttribute('data-location');
+                
+                // Activate corresponding tab
+                tabBtns.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-tab') === location) {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // Show corresponding tab panel
+                const tabPanels = document.querySelectorAll('.tab-panel');
+                tabPanels.forEach(panel => {
+                    panel.classList.remove('active');
+                    if (panel.id === location) {
+                        panel.classList.add('active');
+                    }
+                });
+                
+                // Scroll to tab content
+                document.querySelector('.tabs-container').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Virtual tour video play
+        const videoPlaceholder = document.querySelector('.video-placeholder');
+        const playButton = document.querySelector('.play-button');
+        
+        if (videoPlaceholder && playButton) {
+            playButton.addEventListener('click', function() {
+                // In a real implementation, this would replace the placeholder with an actual video
+                alert('Video tour would play here in the actual implementation.');
+            });
+        }
+    </script>
+</body>
+</html>
+
